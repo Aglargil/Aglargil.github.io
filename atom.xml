@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Aglargil.github.io</id>
+    <title>Aglargil的Blog</title>
+    <updated>2022-09-28T00:19:10.499Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Aglargil.github.io"/>
+    <link rel="self" href="https://Aglargil.github.io/atom.xml"/>
+    <subtitle>思绪来得快去得也快，偶尔会在这里停留(云凤)</subtitle>
+    <logo>https://Aglargil.github.io/images/avatar.png</logo>
+    <icon>https://Aglargil.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Aglargil的Blog</rights>
+</feed>
