@@ -1,4 +1,74 @@
-site_name: My site
-site_url: https://mydomain.org/mysite
+site_description: Aglargil's Blog
+site_name: Aglargil's Blog
+site_url: https://aglargil.github.io/
+
+repo_url: https://github.com/Aglargil/Aglargil.github.io
+repo_name: Aglargil/Aglargil.github.io
+
 theme:
   name: material
+  custom_dir: overrides
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - navigation.instant
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+  language: zh
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - awesome-pages
+  - blog
+  - glightbox
+  - rss:
+      match_path: blog/posts/.* 
+      abstract_chars_count: -1
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
+      categories:
+        - categories
+        - tags 
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+copyright: 版权所有

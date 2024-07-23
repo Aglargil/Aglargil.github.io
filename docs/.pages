@@ -1,0 +1,4 @@
+nav:
+  - Home: index.md
+  - Blog: blog
+  - RSS: feed_rss_created.xml 
